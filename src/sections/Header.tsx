@@ -1,4 +1,4 @@
-import ArrowRight from "@/assets/arrow-right.svg";
+import ArrowRight from "@/assets/arrow-right.svg"; //because this is capital, imports as component
 import Logo from "@/assets/logosaas.png";
 import Image from "next/image";
 import MenuIcon from "@/assets/menu.svg";

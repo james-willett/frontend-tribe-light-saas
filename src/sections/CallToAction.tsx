@@ -13,7 +13,9 @@ export const CallToAction = () => {
     offset: ["start end", "end start"],
   });
 
-  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+
+  const translateY = useTransform(scrollYProgress, [0, 1], [350, -250]);
+  
   return (
     <section
       ref={sectionRef}
@@ -23,7 +25,7 @@ export const CallToAction = () => {
         <div className="section-heading relative">
           <h2 className="section-title">Sign up for free today</h2>
           <p className="section-description mt-5">
-            Celebrate the joy of accomplishment with an app designed to track
+            Celebrate the joy of accomplisment with an app designed to track
             your progress and motivate your efforts.
           </p>
           <motion.img
@@ -32,7 +34,7 @@ export const CallToAction = () => {
             width={360}
             className="absolute -left-[350px] -top-[137px]"
             style={{
-              translateY,
+              translateY: translateY,
             }}
           />
           <motion.img
@@ -41,7 +43,7 @@ export const CallToAction = () => {
             width={360}
             className="absolute -right-[331px] -top-[19px]"
             style={{
-              translateY,
+              translateY: translateY,
             }}
           />
         </div>

@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight;
+    @apply bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight;
   }
 
   .btn-primary {
@@ -36,6 +36,6 @@
   }
 
   .card {
-    @apply p-10 border border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
+    @apply p-10 border border-[#d2c5c5] rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
   }
 }

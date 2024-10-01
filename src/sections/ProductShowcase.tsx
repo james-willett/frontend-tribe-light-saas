@@ -12,7 +12,7 @@ export const ProductShowcase = () => {
     target: sectionRef,
     offset: ["start end", "end start"],
   });
-  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+  const translateY = useTransform(scrollYProgress, [0, 1], [350, -350]);
   return (
     <section
       ref={sectionRef}
@@ -20,9 +20,10 @@ export const ProductShowcase = () => {
     >
       <div className="container">
         <div className="section-heading">
-          <div className="flex justify-center">
+          <div className="flex justify-center items-center">
             <div className="tag">Boost your productivity</div>
           </div>
+
           <h2 className="section-title mt-5">
             A more effective way to track progress
           </h2>
@@ -35,22 +36,22 @@ export const ProductShowcase = () => {
           <Image src={productImage} alt="Product Image" className="mt-10" />
           <motion.img
             src={pyramidImage.src}
-            alt="Pyramid Image"
+            alt="pyramid Image"
             height={262}
             width={262}
             className="hidden md:block absolute -right-36 -top-32"
             style={{
-              translateY,
+              translateY: translateY,
             }}
           />
           <motion.img
             src={tubeImage.src}
-            alt="Tube image"
+            alt="Tube Image"
             height={248}
             width={248}
             className="hidden md:block absolute bottom-24 -left-36"
             style={{
-              translateY,
+              translateY: translateY,
             }}
           />
         </div>

@@ -9,6 +9,7 @@ import { Footer } from "@/sections/Footer";
 
 export default function Home() {
   return (
+    // this only worked when I added the React fragement ( i.e. <> )
     <>
       <Header />
       <Hero />

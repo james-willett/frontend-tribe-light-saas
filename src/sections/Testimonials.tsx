@@ -9,6 +9,7 @@ import avatar7 from "@/assets/avatar-7.png";
 import avatar8 from "@/assets/avatar-8.png";
 import avatar9 from "@/assets/avatar-9.png";
 import Image from "next/image";
+import { userAgent } from "next/server";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 import React from "react";
@@ -95,7 +96,7 @@ const TestimonialsColumn = (props: {
       {[...new Array(2)].fill(0).map((_, index) => (
         <React.Fragment key={index}>
           {props.testimonials.map(({ text, imageSrc, name, username }) => (
-            <div className="card">
+            <div key={username} className="card">
               <div>{text}</div>
               <div className="flex items-center gap-2 mt-5">
                 <Image
